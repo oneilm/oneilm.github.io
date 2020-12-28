@@ -1,1 +1,776 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Basic Page Needs
+	 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Mike O'Neil @ Courant</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+	 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+	 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,600" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,400,400i,600,600i" rel="stylesheet"> -->
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700&display=swap" rel="stylesheet">  -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> -->
+    
+    <!-- <link rel="stylesheet" href="https://use.typekit.net/vsl0dwc.css"> -->
+
+
+    
+    <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- Favicon
+	 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+  </head>
+  <body>
+
+    <!-- Primary Page Layout
+	 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+        
+        <div class="row">
+	<div class="eight columns" style="margin-top: 5%">
+	  <a class="button" href="#bio">Bio</a> &nbsp;
+	  <a class="button" href="#research">Research</a> &nbsp;
+	  <a class="button" href="#publications">Publications</a> &nbsp;
+	  <a class="button" href="#code">Code</a> &nbsp;
+	  <a class="button" href="#courses">Courses</a>
+	</div>
+      </div>
+        
+      <div class="row">
+        <div class="four columns" style="margin-top: 5%">
+          <h4>Mike O'Neil</h4>
+          Associate Professor of Mathematics<br>
+          New York University<br>
+          oneil@cims.nyu.edu<br>
+          212-998-3125<br>
+          <br>
+          
+          Courant Institute<br>
+          251 Mercer St., #1119<br>
+          New York, NY 10012<br>
+          <br>
+	  
+          Tandon School of Engineering<br>
+          2 MetroTech Center, #854<br>
+          Brooklyn, NY 11201
+        </div>
+          <div class="four columns" style="margin-top: 5%">
+          <img class="media-object" src="oneil-headshot-5x7.jpg" width="100%">
+        </div>
+          <div class="two columns" style="margin-top: 5%">
+          </div>  
+      </div>
+        
+      <div class="row">
+            <div class="twelve columns" style="margin-top: 5%">
+            <a name="bio"></a>
+                <h5>Bio</h5>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Sep 2020 - </td>
+                            <td>Associate Professor</td>
+                            <td>Courant Institute, NYU</td>                            
+                        </tr>
+                        <tr>
+                            <td>Sep 2014 - Aug 2020</td>
+                            <td>Assistant Professor</td>
+                            <td>Courant Institute, NYU</td>                            
+                        </tr>
+                        <tr>
+                            <td>Sep 2018 - Aug 2019</td>
+                            <td>Visiting Assistant Professor</td>
+                            <td>Mathematics, MIT</td>                            
+                        </tr>
+                        <tr>
+                            <td>Sep 2012 - Aug 2014</td>
+                            <td>Courant Instructor</td>
+                            <td>Courant Institute, NYU</td>
+                        </tr>
+                        <tr>
+                            <td>Sep 2010 - Aug 2012</td>
+                            <td>Associate Research Scientist</td>
+                            <td>Courant Institute, NYU</td>
+                        </tr>
+                        <tr>
+                            <td>Aug 2007 - Jul 2010</td>
+                            <td>Quant Researcher, Assistant Trader</td>
+                            <td>Susquehanna International Group, LLP</td>
+                        </tr>
+                        <tr>
+                            <td>Dec 2007</td>
+                            <td>Ph.D. Applied Mathematics</td>
+                            <td>Yale University</td>
+                        </tr>
+                        <tr>
+                            <td>May 2003</td>
+                            <td>A.B. Mathematics</td>
+                            <td>Cornell University</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+          <div class="eight columns">
+            <a name="research"></a>
+	    <h5>Research</h5>
+            <p style="text-align:left">
+              Most of my research incorporates the development of fast
+              high-order analysis-based algorithms into problems in
+              computational physics, integral equations, singular
+              quadrature, statistics, and in general, computational
+              science. Almost all problems are rooted in engineering
+              and real-world applications.
+	    </p>
+
+            <p>Research
+              group: <a href="http://www.cims.nyu.edu/fastalgorithms/">Fast
+		Algorithms Research Group at Courant</a>
+	    </p>  
+
+            <h6>Computational PDEs and integral equations</h6>
+	  
+                <p style="text-align:left">
+		  Almost all partial differential equation occurring
+		  in classical mathematical physics can be
+		  reformulated as integral equations with an
+		  appropriate Green's function. Proper integral
+		  formulations are usually very well-conditioned, but
+		  result in large dense systems which require fast
+		  algorithms to solve. Over the last couple decades,
+		  the development of analysis-based algorithms such as
+		  fast multipole methods, butterfly algorithms, etc.
+		  has enabled these systems to be solved rapidly,
+		  usually in near-linear time. I have recently been
+		  working on particular problems in electromagnetics,
+		  acoustics, and magnetohydrodynamics.
+		</p>
+	    <p style="text-align:left">
+	      The numerical solution of any of these problems via an
+	      integral method requires solving problems in mathematical
+	      analysis, numerical analysis (e.g. quadrature for singular
+	      integrals), geometry (e.g. well-conditioned triangulations
+	      and meshes), fast computational algorithms, and other
+	      niches of applied mathematics. The resulting codes are
+	      often long and complicated but very efficient.
+	    </p>
+	  <p style="text-align:left">
+	    Complementary to solving PDEs or integral equations,
+            algorithms which stably and rapidly compute special
+            functions, invert matrices, apply operators, etc. must be
+            developed.  These schemes fall broadly under numerical
+            analysis, and constitute the components that go into
+            necessary software toolboxes for applied mathematics.
+	  </p>
+
+                
+                <h6>Computational statistics</h6>
+	  <p style="text-align:left">
+	    Recently it has been observed that many of the fast
+            analysis-based algorithms used throughout engineering
+            physics have direct applications in statistics, machine
+            learning, and data analysis. In particular, methods for
+            rapidly inverting structured dense covariance matrices
+            have immediately found applications in Gaussian
+            processes.
+	  </p>
+          </div>
+
+
+	  <div class="four columns">
+            <strong>Collaborators</strong><br>
+            <a href="https://www.simonsfoundation.org/team/alex-barnett/">Alex
+              Barnett (Flatiron)</a><br>
+            <a href="http://www.math.nyu.edu/~cerfon/">Antoine Cerfon (NYU)</a><br>
+            <a href="http://www.math.upenn.edu/~cle/">Charlie Epstein (UPenn)</a><br>
+            Zydrunas Gimbutas (NIST)<br>
+            <a href="http://www.math.nyu.edu/faculty/greengar/">Leslie Greengard (NYU)</a><br>
+            <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg (NYU)</a><br>
+            <a href="http://www2.cscamm.umd.edu/~lmig/">Lise-Marie Imbert-Gerard (UMD)</a><br>
+            <a href="http://www.cs.illinois.edu/~andreask">Andreas Kl&ouml;ckner (UIUC)</a><br>
+            <a href="http://www.math.zju.edu.cn:8080/laijun/">Jun Lai
+              (Zhejiang)</a><br>
+	    <a href="https://www.simonsfoundation.org/team/manas-rachh/">Manas
+	      Rachh (Flatiron)</a><br>
+            <br>
+	    
+	    <strong>Post-docs</strong><br>
+	    <p>
+	      Daria Sushnikova
+	    </p>
+	  
+	    <strong>Graduate Students</strong><br>
+	    <p>
+	      Tristan Goodwill
+	    </p>
+
+	    <strong>Alumni</strong><br>
+	    <p>
+	      <a href="http://www.cims.nyu.edu/~malhotra/">Dhairya
+		Malhotra</a> (Flatiron Institute)<br>
+	      Yuwei Jiang<br>
+	      Sunli Tang (Uber)
+	    </p>
+
+	    <strong>Open positions</strong><br>
+	    <p>
+	      Please contact me for more info.
+	    </p>
+
+            </div>
+        </div>
+
+    
+        
+    
+        
+        <div class="row">
+          <div class="twelve columns">
+	    <a name="publications"></a>
+            <h5>Publications</h5>
+                <p>Profile on <a href="https://scholar.google.com/citations?user=lHAzrZcAAAAJ&hl=en&oi=sra" target="_blank">Google Scholar</a>
+                    and <a href="https://arxiv.org/find/math/1/au:+ONeil_M/0/1/0/all/0/1" target="_blank">arXiv.org</a>.</p>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title, author, journal</th>
+                            <th>Download</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+
+
+		      <tr>
+                        <td>Fast multipole methods for the evaluation
+			  of layer potentials with locally-corrected
+			  quadratures<br> L. Greengard, M. O'Neil,
+			  M. Rachh, and F. Vico, submitted, 2020.</td>
+			<td><a href="http://arxiv.org/abs/2006.02545" 
+                                   target="_blank">arXiv:2006.02545</a></td>
+                      </tr>
+
+
+
+		      <tr>
+                        <td>A fast boundary integral method for
+			  high-order multiscale mesh generation<br>
+			  F. Vico, L. Greengard, M. O'Neil, and
+			  M. Rachh, <i>SIAM
+			    J. Sci. Comput.</i>, 42(2):A1380-A1401, 2020.</td>
+			<td><a href="https://doi.org/10.1137/19M1290450"
+			       target="_blank">journal</a><br>
+			<a href="http://arxiv.org/abs/1909.13356" 
+                                   target="_blank">arXiv:1909.13356</a></td>
+                      </tr>
+
+
+		      
+		      <tr>
+                        <td>Efficient high-order singular quadrature
+                          schemes in magnetic fusion<br>
+			  D. Malhotra, A. J. Cerfon,
+                        M. O'Neil, and E. Toler,<br><i>Plasma
+                          Phys. Control. Fusion</i>, 62(2):024004, 2019.</td>
+			<td><a href="https://doi.org/10.1088/1361-6587/ab57f4"
+			       target="_blank">journal</a><br>
+			  <a href="https://arxiv.org/abs/1909.07417" 
+                                   target="_blank">arXiv:1909.07417</a></td>
+                      </tr>
+
+		      <tr>
+                        <td>Taylor States in Stellarators: A Fast
+                        High-order Boundary Integral Solver<br>
+			  D. Malhotra, A. J. Cerfon,
+                        L.-M. Imbert-Gerard, and
+                          M. O'Neil,<br>
+			  <i>J. Comput. Phys.</i>,
+                        397:108791, 2019.</td>
+                        <td><a href="https://www.sciencedirect.com/science/article/pii/S0021999119304759" 
+                               target="_blank">journal</a><br>
+			  <a href="https://arxiv.org/abs/1902.01205" 
+                                   target="_blank">arXiv:1902.01205</a></td>
+                      </tr>
+
+
+		      <tr>
+                            <td>An FFT-accelerated direct solver for
+                            electromagnetic scattering from penetrable
+                            axisymmetric objects
+			      <br>
+			      J. Lai and 
+			      M. O'Neil, <i>J. Comput. Phys.</i>,
+			      390:152-174, 2019.
+			    </td>
+                            <td><a href="https://www.sciencedirect.com/science/article/pii/S0021999119302384" 
+                                   target="_blank">journal</a><br>
+			      <a href="https://arxiv.org/abs/1810.07067" 
+                                   target="_blank">arXiv:1810.07067</a></td>
+                        </tr>
+		      
+
+		      <tr>
+                            <td>A high-order wideband direct
+				solver for electromagnetic scattering
+				from bodies of revolution
+			      <br>
+			      C. L. Epstein, L. Greengard, and
+			      M. O'Neil, <i>J. Comput. Phys.</i>, 
+			      387:205-229, 2019.
+			    </td>
+                            <td><a href="https://www.sciencedirect.com/science/article/pii/S0021999119301585" target="_blank">journal</a><br>
+<a href="https://arxiv.org/abs/1708.00056" 
+                                   target="_blank">arXiv:1708.00056</a></td>
+                        </tr>
+
+
+
+
+
+		      <tr>
+                            <td>Second-kind integral equations for the
+				Laplace-Beltrami problem on surfaces
+				in three dimensions<br> M. O'Neil,
+				 <i>Adv. Comput. Math.</i>, 44(5):
+				1385-1409, 2018.
+			    </td>
+                            <td><a href="https://rdcu.be/FvJp" 
+                                   target="_blank">journal<br>(open-access)</a></td>
+                        </tr>
+		      
+
+                        <tr>
+                            <td>A new hybrid integral representation for
+                                frequency domain scattering in layered media<br>
+                                J. Lai, L. Greengard, and M. O'Neil,
+			      <i>Appl. Comput. Harm. Anal.</i>, 45(2):359-378, 2018.</td>
+                            <td><a href="http://www.sciencedirect.com/science/article/pii/S1063520316300719"
+                                   target="_blank">journal</a><br>
+                                <a href="http://arxiv.org/abs/1507.03491"
+                                   target="_blank">arXiv:1507.03491</a></td>
+                        </tr>
+
+
+			<tr>
+                            <td>An integral equation-based numerical
+                                solver for Taylor states in toroidal
+                                geometries<br>
+                              M. O'Neil and A. Cerfon,
+			      <i>J. Comput. Phys.</i>, 359:263-282, 2018.</td>
+                                <td><a href="https://www.sciencedirect.com/science/article/pii/S0021999118300147"
+                                       target="_blank">journal</a><br>
+				  <a href="http://arxiv.org/abs/1611.01420"
+                                       target="_blank">arXiv:1611.01420</a></td>
+                        </tr>
+
+
+			
+                        <tr> 
+                            <td>Accurate and efficient numerical
+                                calculation of stable densities
+                                via optimized quadrature and asymptotics<br>
+                                S. Ament and M. O'Neil, <i>
+                                Stat. Comput.</i>, 28(1):171-185, 2017.</td>
+                            <td><a href="http://rdcu.be/owcD" target="_blank">open-access</a></td>
+                        </tr>
+
+                      <tr>
+                            <td>Fast algorithms for Quadrature by
+                                Expansion I: Globally valid expansions<br>
+                                M. Rachh, A. Kl&ouml;ckner, and
+                                M. O'Neil, <i>J. Comput. Phys.</i>,
+                                345:706-731, 2017.
+			      </td>
+                            <td><a href="http://www.sciencedirect.com/science/article/pii/S0021999117303418" 
+                                   target="_blank">journal</a><br>
+			    <a href="http://arxiv.org/abs/1602.05301" 
+                                   target="_blank">arXiv:1602.05301</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Robust integral formulations for
+                                electromagnetic scattering from three-dimensional
+                                cavities<br>
+                              J. Lai, L. Greengard, and M. O'Neil,
+			      <i>J. Comput. Phys.</i>, 345:1-16, 2017.</td>
+                            <td><a href="http://www.sciencedirect.com/science/article/pii/S0021999117303777"
+                                   target="_blank">journal</a><br>
+			    <a href="http://arxiv.org/abs/1606.03599"
+                                   target="_blank">arXiv:1606.03599</a></td>
+                        </tr>
+
+		      <tr>
+                            <td>Fast symmetric factorization of
+                                hierarchical matrices with
+                                applications<br>
+                                S. Ambikasaran, M. O'Neil, and
+                              K. R. Singh, technical report, 2016.
+			    </td>
+                            <td><a href="http://arxiv.org/abs/1405.0223" 
+                                   target="_blank">arXiv:1405.0223</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Smoothed corners and scattered
+                                waves<br> C. L. Epstein and M. O'Neil,
+                                <i>SIAM J. Sci. Comput.</i>, 38(5):A2665-A2698, 2016.</td>
+                            <td><a href="http://epubs.siam.org/doi/abs/10.1137/15M1028248" 
+                                   target="_blank">journal</a><br>
+                                <a href="http://arxiv.org/abs/1506.08449"
+                                   target="_blank">arXiv:1506.08449</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Fast Direct Methods for Gaussian
+                                Processes<br>
+                                S. Ambikasaran, D. Foreman-Mackey, L. Greengard, 
+                                D. W. Hogg, and M. O'Neil,<br> <i>IEEE Trans. Pattern 
+                                Anal. Mach. Intell.</i>, 38(2):252-265, 2016.</td>
+                            <td><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7130620" 
+                                   target="_blank">journal</a><br>
+                                <a href="http://arxiv.org/abs/1403.6015" 
+                                   target="_blank">arXiv:1403.6015</a></td>
+                        </tr>
+
+	      
+                        <tr>
+                            <td>Debye Sources, Beltrami Fields, and a Complex 
+                                Structure on Maxwell Fields<br> C. L. Epstein,  
+                                L. Greengard, and M. O'Neil,<br> <i>Comm. Pure Appl. Math.</i>
+                              68(12):2237-2280, 2015.
+			    </td>
+                            <td><a href="http://onlinelibrary.wiley.com/doi/10.1002/cpa.21560/abstract" 
+                                   target="_blank">journal</a><br>
+                            <a href="http://arxiv.org/abs/1308.5425" 
+                               target="_blank">arXiv:1308.5425</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>Exact axisymmetric Taylor states for
+                                shaped plasmas<br> 
+                                A. Cerfon and M. O'Neil, <i>Phys. Plasmas</i> 21, 064501, 2014.</td>
+                            <td><a href="http://scitation.aip.org/content/aip/journal/pop/21/6/10.1063/1.4881466" 
+                                   target="_blank">journal</a><br>
+                                <a href="http://arxiv.org/abs/1406.0481" 
+                                   target="_blank">arXiv:1406.0481</a></td>
+                        </tr>    
+
+                        <tr>
+                            <td>A generalized Debye source approach to electromagnetic 
+                                scattering in layered 
+                                media<br>M. O'Neil, <i>J. Math. Phys.</i>  55, 012901, 
+                                2014.</td>
+                            <td><a href="http://scitation.aip.org/content/aip/journal/jmp/55/1/10.1063/1.4862747" 
+                                   target="_blank">journal</a><br>
+                                <a href="http://arxiv.org/abs/1310.4241" 
+                                   target="_blank">arXiv:1310.4241</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>On the efficient representation of the
+                                impedance Green's function for the Helmholtz
+                                equation<br>M. O'Neil, L. Greengard, and A. Pataki,
+                                <i>Wave Motion</i> 51(1):1-13, 2014. </td>
+                            <td><a href="http://authors.elsevier.com/sd/article/S016521251300084X" 
+                                   target="_blank">journal</a><br>
+                                <a href="http://arxiv.org/abs/1109.6708" 
+                                   target="_blank">arXiv:1109.6708</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Quadrature by Expansion: A New Method for
+                                the Evaluation of Layer
+                                Potentials<br> A. Kl&ouml;ckner,
+                                A. Barnett, L. Greengard, and M. O'Neil,
+                                <i>J. Comput. Phys.</i> 252:332-349, 2013. </td>
+                            <td><a href="http://www.sciencedirect.com/science/article/pii/S0021999113004579" 
+                                   target="_blank">journal</a><br>
+                                <a href="http://arxiv.org/abs/1207.4461" 
+                                   target="_blank">arXiv:1207.4461</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>A fast, high-order solver for the
+                                Grad-Shafranov equation<br>
+                                A. Pataki, A. J. Cerfon, J. P. Freidberg, L. Greengard, and M. O'Neil,<br>
+                                <i>J. Comput. Phys.</i> 243:28-45, 2013.
+                            </td>
+                            <td><a href="http://www.sciencedirect.com/science/article/pii/S0021999113001721" 
+                                   target="_blank">journal</a><br>
+                                <a href="http://arxiv.org/abs/1210.2113" 
+                                   target="_blank">arXiv:1210.2113</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>A consistency condition for the vector potential in 
+                                multiply-connected domains<br> C. L. Epstein, 
+                                Z. Gimbutas, L. Greengard, A. Kl&ouml;ckner, and M. O'Neil,<br><i>IEEE 
+                                Trans. Magn.</i> 49(3):1072-1076, 2013. </td>
+                            <td><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=6327672" 
+                                   target="_blank">journal</a><br>
+                                <a href="http://arxiv.org/abs/1203.3993" 
+                                   target="_blank">arXiv:1203.3993</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Debye sources and the numerical solution of the time 
+                                harmonic Maxwell equations, II<br> 
+                                C. L. Epstein, L. Greengard, and M. O'Neil, 
+                                <i>Comm. Pure Appl. Math.</i> 66(5):753-789, 2013. </td>
+                            <td><a href="http://onlinelibrary.wiley.com/doi/10.1002/cpa.21420/abstract" 
+                                   target="_blank">journal</a><br>
+                                <a href="http://arxiv.org/abs/1105.3217" 
+                                   target="_blank">arXiv:1105.3217</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>An algorithm for the rapid evaluation of special 
+                                function transforms<br> M. O'Neil,  F. Woolfe, and 
+                                V. Rokhlin, <i>Appl. Comput. Harmon. Anal.</i> 
+                                28(2):203-226, 2010.</td>
+                            <td><a href="http://www.sciencedirect.com/science/article/pii/S1063520309000888" 
+                                   target="_blank">journal</a><br>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Slow passage through resonance in Mathieu's 
+                                equation<br> L. Ng, R. H. Rand, and M. O'Neil, <i>J. Vib. Control</i> 9(6):685-707, 2003.</td>
+                            <td><a href="http://jvc.sagepub.com/content/9/6/685.short" 
+                                   target="_blank">journal</a></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    
+        
+ 
+        <div class="row">
+          <div class="twelve columns">
+	    <a name="code"></a>
+            <h5>Code</h5>
+	  </div>
+	</div>
+
+	<div class="row">
+	  <div class="six columns">
+
+	    <strong>Taylor states in stellarators</strong><br>
+	    <p style="text-align:left">Using an integral equation
+	    formulation for constant-coefficient Beltrami fields, we
+	    developed a fast solver for MHD equilibria.  See <i>Taylor
+	    States in Stellarators</i> above for more information<br>
+	      <a class="button"
+		 href="https://github.com/dmalhotra/BIEST">GitHub</a>
+	      </p>
+	    
+            <strong>Corner and edge rounding</strong><br>
+                <p style="text-align:left">Elliptic PDEs in singular
+                    geometries are often computaitonally more expensive to
+                    solve than those in nearby regularized geometries. We
+                    have released preliminary Matlab code for
+                    regularizing polygons in 2D and polyhedra in
+                    3D. See <i>Smoothed corners and scattered waves</i>
+                  above for more info.<br>
+		  <a class="button" href="https://github.com/fastalgorithms/rounding">GitHub</a>
+                </p> 
+
+                <strong>Fast multipole methods</strong><br>
+                <p style="text-align:left">Three-dimensional fast
+                    multipole codes Laplace, Helmholtz,
+                  and Maxwell potentials can be
+                    downloaded from GitHub, and are supported by the
+                    Flatiron Institute. This is a collaborative effort
+                    between many researchers.<br>
+		  <a class="button"
+		     href="https://github.com/flatironinstitute/FMM3D"
+		 target="_blank">GitHub</a>
+                </p> 
+
+
+	  </div>
+
+	  <div class="six columns">
+            <strong>Fast methods for Gaussian processes</strong><br>
+            <p style="text-align:left">The largest computational
+              task encountered when modeling using Gaussian processes
+              is the inversion of a (dense) covariance matrix. Often,
+              these matrices have a hierarchical structure that can be
+              exploited. <i>george</i> is a Python interface for a C++
+              implementation of the HODLR factorization. See <i>Fast
+              Direct Methods for Gaussian Processes</i> above for more
+              information.<br>
+	      <a class="button"
+              href="https://george.readthedocs.io/en/latest/" target="_blank">Read the
+		Docs</a>
+	      <a class="button"
+              href="https://github.com/dfm/george" target="_blank">GitHub</a> 
+            </p> 
+
+            <strong>Stable density evaluation</strong><br> 
+            <p style="text-align:left">Random variables whose
+            distribution family is closed under addition are known as
+            stable distributions, including normal and Cauchy
+            distributions. In general, there
+            are no closed form expressions for their evaluation. Using
+            custom designed Generalized Gaussian Quadrature rules and
+            asymptotics, the density
+              function can be evaluated for a wide range of stable distributions.
+	      <br>
+	      <a class="button"
+              href="https://gitlab.com/s_ament/qastable" target="_blank">GitLab</a>
+            </p> 
+	  </div>
+        </div>
+	
+    
+        
+        <div class="row" >
+            <div class="twelve columns" style="margin-bottom: 5%">
+	    <a name="courses"></a>
+                <h5>Courses</h5>
+  
+
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Semester</th>
+                            <th>Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="courses/sp21-ma6963/">Statistics</a></td>
+                            <td>Spring 2021</td>
+                            <td>MA-GY 6963 </td>
+                        </tr>
+                        <tr>
+                            <td><a href="courses/fa20-math2011/">Fast solvers</a></td>
+                            <td>Fall 2020</td>
+                            <td>MATH-GA 2011.003</td>
+                        </tr>
+                        <tr>
+                            <td><a href="courses/fa20-math233/">Theory
+                            of probability</a></td>
+                            <td>Fall 2020</td>
+                            <td>MATH-UA 233</td>
+                        </tr>
+                        <tr>
+                            <td><a href="courses/sp20-ma4424/">Numerical analysis</a></td>
+                            <td>Spring 2020</td>
+                            <td>MA-UY 4424</td>
+                        </tr>
+                        <tr>
+                            <td><a href="courses/fa19-math262/">Ordinary differential equations</a></td>
+                            <td>Fall 2019</td>
+                            <td>MATH-UA 262</td>
+                        </tr>
+                        <tr>
+                            <td><a href="courses/sp19-math2840/">Computational
+                            methods for integral equations</a></td>
+                            <td>Spring 2019</td>
+                            <td>MATH-GA 2840.001</td>
+                        </tr>
+                        <tr>
+                            <td><a href="courses/sp18-math252/">Numerical analysis</a></td>
+                            <td>Spring 2018</td>
+                            <td>MATH-UA 252</td>
+                        </tr>
+                        <tr>
+                            <td><a href="courses/fa17-math2011/">Integral
+                            equations and fast algorithms</a></td>
+                            <td>Fall 2017</td>
+                            <td>MATH-GA 2011.002</td>
+                        </tr>
+                        <tr>
+                            <td>Linear algebra and differential equations</td>
+                            <td>Fall 2016</td>
+                            <td>MA-UY 2034</td>
+                        </tr>
+                        <tr>
+                            <td><a href="courses/sp16-ma4423/">Introductory numerical analysis</a></td>
+                            <td>Spring 2016</td>
+                            <td>MA-UY 4423</td>
+                        </tr>
+                        <tr>
+                            <td><a href="courses/fa15-math2830/">Fast analysis-based algorithms</a></td>
+                            <td>Fall 2015</td>
+                            <td>MATH-GA 2830.002</td>
+                        </tr>
+                        <tr>
+                            <td><a href="courses/sp15-ma4423/">Introductory numerical analysis</a></td>
+                            <td>Spring 2015</td>
+                            <td>MA-UY 4423</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://cds.nyu.edu/ds-ga-1006-fall-2014/">Capstone project in Data Science</a></td>
+                            <td>Fall 2014</td>
+                            <td>DS-GA 1006</td>
+                        </tr>
+                        <tr>
+                            <td><a href="courses/sp14-math234/">Mathematical statistics</a></td>
+                            <td>Spring 2014</td>
+                            <td>MATH-UA 234</td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://math.nyu.edu/faculty/greengar/datascience/datascience.html">Data Science Projects</a></td>
+                            <td>Fall 2013</td>
+                            <td>MATH-GA 2011.001</td>
+                        </tr>
+                        <tr>
+                            <td>Mathematical statistics</td>
+                            <td>Spring 2013</td>
+                            <td>MATH-UA 234</td>
+                        </tr>                        
+                        <tr>
+                            <td>Linear Algebra</td>
+                            <td>Fall 2012</td>
+                            <td>MATH-UA 140</td>
+                        </tr>                    
+                        <tr>
+                            <td>Linear Algebra</td>
+                            <td>Spring 2012</td>
+                            <td>MATH-UA 140</td>
+                        </tr>                    
+                    </tbody>
+                </table>
+            
+            </div>
+        </div>
+
+    
+    </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
